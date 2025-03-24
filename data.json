@@ -1,0 +1,101 @@
+[
+    {
+       "image": {
+            "thumbnail": "./asset/image-waffle-thumbnail.jpg",
+            "mobile": "./asset/image-waffle-mobile.jpg",
+            "tablet": "./asset/image-waffle-tablet.jpg",
+            "desktop": "./asset/image-waffle-desktop.jpg"
+       },
+       "name": "Waffle with Berries",
+       "category": "Waffle",
+       "price": 6.50
+    },
+    {
+        "image": {
+            "thumbnail": "./asset/image-creme-brulee-thumbnail.jpg",
+            "mobile": "./asset/image-creme-brulee-mobile.jpg",
+            "tablet": "./asset/image-creme-brulee-tablet.jpg",
+            "desktop": "./asset/image-creme-brulee-desktop.jpg"
+        },
+        "name": "Vanilla Bean Crème Brûlée",
+        "category": "Cremebrulee",
+        "price": 7.00
+     },
+     {
+        "image": {
+            "thumbnail": "./asset/image-macaron-thumbnail.jpg",
+            "mobile": "./asset/image-macaron-mobile.jpg",
+            "tablet": "./asset/image-macaron-tablet.jpg",
+            "desktop": "./asset/image-macaron-desktop.jpg"
+        },
+        "name": "Macaron Mix of Five",
+        "category": "Macaron",
+        "price": 8.00
+     },
+     {
+        "image": {
+            "thumbnail": "./asset/image-tiramisu-thumbnail.jpg",
+            "mobile": "./asset/image-tiramisu-mobile.jpg",
+            "tablet": "./asset/image-tiramisu-tablet.jpg",
+            "desktop": "./asset/image-tiramisu-desktop.jpg"
+        },
+        "name": "Classic Tiramisu",
+        "category": "Tiramisu",
+        "price": 5.50
+     },
+     {
+        "image": {
+            "thumbnail": "./asset/image-baklava-thumbnail.jpg",
+            "mobile": "./asset/image-baklava-mobile.jpg",
+            "tablet": "./asset/image-baklava-tablet.jpg",
+            "desktop": "./asset/image-baklava-desktop.jpg"
+        },
+        "name": "Pistachio Baklava",
+        "category": "Baklava",
+        "price": 4.00
+     },
+     {
+        "image": {
+            "thumbnail": "./asset/image-meringue-thumbnail.jpg",
+            "mobile": "./asset/image-meringue-mobile.jpg",
+            "tablet": "./asset/image-meringue-tablet.jpg",
+            "desktop": "./asset/image-meringue-desktop.jpg"
+        },
+        "name": "Lemon Meringue Pie",
+        "category": "Pie",
+        "price": 5.00
+     },
+     {
+        "image": {
+            "thumbnail": "./asset/image-cake-thumbnail.jpg",
+            "mobile": "./asset/image-cake-mobile.jpg",
+            "tablet": "./asset/image-cake-tablet.jpg",
+            "desktop": "./asset/image-cake-desktop.jpg"
+        },
+        "name": "Red Velvet Cake",
+        "category": "Cake",
+        "price": 4.50
+     },
+     {
+        "image": {
+            "thumbnail": "./asset/image-brownie-thumbnail.jpg",
+            "mobile": "./asset/image-brownie-mobile.jpg",
+            "tablet": "./asset/image-brownie-tablet.jpg",
+            "desktop": "./asset/image-brownie-desktop.jpg"
+        },
+        "name": "Salted Caramel Brownie",
+        "category": "Brownie",
+        "price": 4.50
+     },
+     {
+        "image": {
+            "thumbnail": "./asset/image-panna-cotta-thumbnail.jpg",
+            "mobile": "./asset/image-panna-cotta-mobile.jpg",
+            "tablet": "./asset/image-panna-cotta-tablet.jpg",
+            "desktop": "./asset/image-panna-cotta-desktop.jpg"
+        },
+        "name": "Vanilla Panna Cotta",
+        "category": "Pannacotta",
+        "price": 6.50
+     }
+]

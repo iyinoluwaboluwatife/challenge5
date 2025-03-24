@@ -1,0 +1,810 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+body {
+    line-height:1;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+nav ul {
+    list-style:none;
+}
+blockquote, q {
+    quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+del {
+    text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+input, select {
+    vertical-align:middle;
+}
+*
+{
+  text-decoration: none;
+}
+.red-hat-text{
+    font-family: "Red Hat Text", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+body {
+    display: block;
+    padding: 40px;
+    background-color: hsl(13, 31%, 94%);
+}
+.dessert{
+    font-family: "Red Hat Text";
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.menu{
+    display: grid;
+    grid-template-columns:repeat(1,1fr) ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "Waffle"
+    "Creme"
+    "Macaron"
+    "Tiramisu"
+    "Baklava"
+    "Pie"
+    "Cake"
+    "Brownie"
+    "Panna"
+    ;
+    gap: 20px;
+}
+.Waffle,.Creme,.Macaron,.Tiramisu,.Baklava,.Pie,.Cake,.Brownie,.Panna{
+    position: relative;
+    width: 100%;
+}
+.Waffle p,.Creme p,.Macaron p,.Tiramisu p,.Baklava p,.Pie p,.Cake p,.Brownie p,.Panna p{
+    font-family: "Red Hat Text";
+    font-size: 12px;
+    line-height: 16px;
+    color:  hsl(7, 20%, 60%);
+}
+.Waffle h2,.Creme h2,.Macaron h2,.Tiramisu h2,.Baklava h2,.Pie h2,.Cake h2,.Brownie h2,.Panna h2{
+    font-family: "Red Hat Text";
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600;
+}
+.Waffle h3,.Creme h3,.Macaron h3,.Tiramisu h3,.Baklava h3,.Pie h3,.Cake h3,.Brownie h3,.Panna h3{
+    font-family: "Red Hat Text";
+    font-size: 14px;
+    line-height: 18px;
+    color: hsl(14, 83%, 35%);
+    font-weight: 600;
+}
+.wafimg,.cremeimg,.macaronimg,.tiramisuimg,.baklavaimg,.pieimg,.cakeimg,.brownieimg,.pannaimg {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.wafflebtn,.cremebtn,.macaronbtn,.tiramisubtn,.baklavabtn,.piebtn,.cakebtn,.browniebtn,.pannabtn{
+    border: 1px solid hsl(14, 86%, 42%);
+    border-radius: 30px;
+    background-color: #fff;
+    padding: 5px 15px 5px 15px;
+    visibility: visible;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.wafflebtn span,.cremebtn span,.macaronbtn span,.tiramisubtn span,.baklavabtn span,.piebtn span,.cakebtn span,.browniebtn span,.pannabtn span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Red Hat Text";
+    font-size: 12px;
+    font-weight: 500;
+    position: relative;
+}
+.wafflebtn span:hover,.cremebtn span:hover,.macaronbtn span:hover,.tiramisubtn span:hover,.baklavabtn span:hover,.piebtn span:hover,.cakebtn span:hover,.browniebtn span:hover,.pannabtn span:hover{
+    color: hsl(14, 86%, 42%);
+    cursor: pointer;
+}
+.wafflebtn span img,.cremebtn span img,.macaronbtn span img,.tiramisubtn span img,.baklavabtn span img,.piebtn span img,.cakebtn span img,.browniebtn span img,.pannabtn span img{
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+.wafflecount,.cremecount,.macaroncount,.tiramisucount,.baklavacount,.piecount,.cakecount,.browniecount,.pannacount{
+    background-color:hsl(14, 83%, 35%) ;
+    border-radius: 30px;
+    padding: 5px 25px 5px 25px;
+    visibility: hidden;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.wafflecount span p,.cremecount span p,.macaroncount span p,.tiramisucount span p,.baklavacount span p,.piecount span p,.cakecount span p,.browniecount span p,.pannacount span p{
+    display: inline-block;
+}
+.wafflecount span,.cremecount span ,.macaroncount span ,.tiramisucount span,.baklavacount span,.piecount span ,.cakecount span ,.browniecount span,.pannacount span {
+    display: flex;
+    justify-content: space-between;
+}
+#waffledecrease,#cremedecrease,#macarondecrease,#tiramisudecrease,#baklavadecrease,#piedecrease,#cakedecrease,#browniedecrease,#pannadecrease{
+    color: #fff;
+    background-color: hsl(14, 83%, 35%);
+    border-radius: 50%;
+    border: 1.3px solid #fff;
+    padding: 0px 4px 1px 4px;
+    font-family: "Red Hat Text";
+    font-size: 12px;
+    margin-bottom: 1px;
+    margin-right: 20px;
+}
+#waffledecrease:hover,#cremedecrease:hover,#macarondecrease:hover,#tiramisudecrease:hover,#baklavadecrease:hover,#piedecrease:hover,#cakedecrease:hover,#browniedecrease:hover,#pannadecrease:hover{
+    color: hsl(14, 83%, 35%);
+    background-color: #fff;
+    cursor: pointer;
+}
+#waffleincrease,#cremeincrease,#macaronincrease,#tiramisuincrease,
+#baklavaincrease,#pieincrease,#cakeincrease,#brownieincrease,#pannaincrease{
+    color: #fff;
+    background-color: hsl(14, 83%, 35%);
+    border-radius: 50%;
+    border: 1.3px solid #fff;
+    padding: 0px 3px 0px 3px;
+    font-family: "Red Hat Text";
+    font-size: 12px;
+    float: right;
+    margin-top: 2px;
+    margin-left: 20px;
+}
+#waffleincrease:hover,#cremeincrease:hover,#macaronincrease:hover,#tiramisuincrease:hover,#baklavaincrease:hover,#pieincrease:hover,#cakeincrease:hover,#brownieincrease:hover,#pannaincrease:hover{
+    color: hsl(14, 83%, 35%);
+    background-color: #fff;
+    cursor: pointer;
+}
+#wafflelabel,#cremebruleelabel,#macaronlabel,#tiramisulabel,
+#baklavalabel,#pielabel,#cakelabel,#brownielabel,#pannacottalabel{
+    color: #fff;
+    background-color: hsl(14, 83%, 35%);
+    font-family: "Red Hat Text";
+    font-size: 14px;
+    padding-top: 3px;
+    
+}
+aside{
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+    max-height: fit-content;
+}
+aside h1{
+    font-family: "Red Hat Text";
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: hsl(14, 83%, 35%);
+    
+}
+.emptycart{
+    display: block;
+}
+.emptycartimg{
+    display: flex;
+    justify-content: center;
+}
+.emptycartimg img{
+    height: 70px;
+    width: 70px;
+}
+.emptycart p{
+    font-family: "Red Hat Text";
+    font-size: 12px;
+    color: hsl(14, 83%, 35%);
+    text-align: center;
+    margin-top: 10px;
+}
+.cart{
+    display: none;
+}
+.cartmenu1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid hsl(12, 16%, 94%);
+}
+.menu1 h2{
+    font-family: "Red Hat Text";
+    font-size: 12px;
+    line-height: 30px;
+    font-weight: 600;
+}
+.menu1 span{
+    display: flex;
+    font-family: "Red Hat Text";
+    font-size: 12px;
+    color: hsl(7, 20%, 60%);
+}
+.number{
+    font-family: "Red Hat Text";
+    font-size: 12px;
+    color: hsl(14, 83%, 35%);
+    margin-right: 10px;
+    font-weight: 600;
+}
+.amount {
+    font-family: "Red Hat Text";
+    font-size: 12px;
+    margin-right: 8px;
+}
+.totalamount {
+    font-family: "Red Hat Text";
+    font-size: 12px;
+    margin-right: 8px;
+    font-weight: 600;
+}
+.cancel{
+    font-family: "Red Hat Text";
+    font-size: 8px;
+    color: hsl(7, 20%, 60%);
+    border-radius: 50%;
+    border: 1px solid hsl(7, 20%, 60%);
+    padding: 0 1px 0 1px;
+    font-weight: 500;
+}
+.cancel:hover{
+    cursor: pointer;
+    color: #111;
+    border: 1px solid #111;
+}
+.ordertotal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.totaltext{
+    font-family: "Red Hat Text";
+    font-size: 14px;
+}
+.totalorder{
+    font-family: "Red Hat Text";
+    font-size: 16px; 
+}
+.confirmorder  {
+    font-family: "Red Hat Text";
+    font-size: 12px;
+    background-color:hsl(14, 83%, 35%) ;
+    color: #fff;
+    border: 1px solid hsl(14, 83%, 35%);
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 8px;
+    width: 100%;
+}
+.confirmorder a {
+    font-family: "Red Hat Text";
+    font-size: 12px;
+    background-color:hsl(14, 83%, 35%) ;
+    color: #fff;
+    border: 1px solid hsl(14, 83%, 35%);
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 8px;
+    width: 100%;
+}
+.confirmorder a:hover{
+    background-color:hsl(14, 79%, 26%) ;
+    border: none;
+    cursor: pointer;
+}
+.confirmorder:hover{
+    background-color:hsl(14, 79%, 26%) ;
+    border: none;
+    cursor: pointer;
+}
+.confirmorder2 a{
+    font-family: "Red Hat Text";
+    font-size: 12px;   
+    color: #fff;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 8px;
+    width: 100%;
+}
+.confirmorder2 {
+    font-family: "Red Hat Text";
+    font-size: 12px;
+    background-color:hsl(14, 83%, 35%) ;
+    color: #fff;
+    border: 1px solid hsl(14, 83%, 35%);
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 8px;
+    width: 100%;
+}
+.confirmorder2:hover{
+    background-color:hsl(14, 79%, 26%) ;
+    border: none;
+    cursor: pointer;
+}
+.carbonneutral{
+    display: flex;
+    justify-content: center;
+    background-color: hsl(13, 31%, 94%);
+    border: 1px solid hsl(13, 31%, 94%);
+    border-radius: 7px;
+    padding: 10px ;
+    margin-top: 15px;
+    width: 100%;
+}
+.carbonneutral span{
+    display: flex;
+    align-items: center;
+    font-family: "Red Hat Text";
+    font-size: 12px;
+}
+.carbonneutral img{
+    width: 20px;
+    height: 20px;
+}
+
+.modalconfirmation{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+.modalconfirmation img{
+    width: 35px;
+    height: 35px;
+}
+.modalh{
+    font-family: "Red Hat Text";
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: hsl(0, 0%, 9%);
+}
+.modalp{
+    font-family: "Red Hat Text";
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: hsl(7, 20%, 60%);
+}
+.menucalculation{
+    background-color: hsl(13, 31%, 94%);
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.menu1img{
+    display: flex;
+    align-items: center;
+}
+.menu1img img{
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+}
+
+
+
+
+@media only screen and  (min-width:1000px) {
+body {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    background-color: hsl(13, 31%, 94%);
+}
+.dessert{
+    font-family: "Red Hat Text";
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.menu{
+    display: grid;
+    grid-template-columns:repeat(3,1fr) ;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "Waffle Creme Macaron"
+    "Tiramisu Baklava Pie"
+    "Cake Brownie Panna"
+    ;
+    gap: 20px;
+}
+.Waffle,.Creme,.Macaron,.Tiramisu,.Baklava,.Pie,.Cake,.Brownie,.Panna{
+    position: relative;
+}
+.Waffle p,.Creme p,.Macaron p,.Tiramisu p,.Baklava p,.Pie p,.Cake p,.Brownie p,.Panna p{
+    font-family: "Red Hat Text";
+    font-size: 12px;
+    line-height: 16px;
+    color:  hsl(7, 20%, 60%);
+}
+.Waffle h2,.Creme h2,.Macaron h2,.Tiramisu h2,.Baklava h2,.Pie h2,.Cake h2,.Brownie h2,.Panna h2{
+    font-family: "Red Hat Text";
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600;
+}
+.Waffle h3,.Creme h3,.Macaron h3,.Tiramisu h3,.Baklava h3,.Pie h3,.Cake h3,.Brownie h3,.Panna h3{
+    font-family: "Red Hat Text";
+    font-size: 14px;
+    line-height: 18px;
+    color: hsl(14, 83%, 35%);
+    font-weight: 600;
+}
+.wafimg,.cremeimg,.macaronimg,.tiramisuimg,.baklavaimg,.pieimg,.cakeimg,.brownieimg,.pannaimg {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.wafflebtn,.cremebtn,.macaronbtn,.tiramisubtn,.baklavabtn,.piebtn,.cakebtn,.browniebtn,.pannabtn{
+    border: 1px solid hsl(14, 86%, 42%);
+    border-radius: 30px;
+    background-color: #fff;
+    padding: 5px 15px 5px 15px;
+    visibility: visible;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    
+}
+.wafflebtn span,.cremebtn span,.macaronbtn span,.tiramisubtn span,.baklavabtn span,.piebtn span,.cakebtn span,.browniebtn span,.pannabtn span{
+    display: flex;
+    align-items: center;
+    font-family: "Red Hat Text";
+    font-size: 12px;
+    font-weight: 500;
+}
+.wafflebtn span:hover,.cremebtn span:hover,.macaronbtn span:hover,.tiramisubtn span:hover,.baklavabtn span:hover,.piebtn span:hover,.cakebtn span:hover,.browniebtn span:hover,.pannabtn span:hover{
+    color: hsl(14, 86%, 42%);
+    cursor: pointer;
+}
+.wafflebtn span img,.cremebtn span img,.macaronbtn span img,.tiramisubtn span img,.baklavabtn span img,.piebtn span img,.cakebtn span img,.browniebtn span img,.pannabtn span img{
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+.wafflecount,.cremecount,.macaroncount,.tiramisucount,.baklavacount,.piecount,.cakecount,.browniecount,.pannacount{
+    background-color:hsl(14, 83%, 35%) ;
+    border-radius: 30px;
+    padding: 5px 25px 5px 25px;
+    visibility: hidden;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.wafflecount span p,.cremecount span p,.macaroncount span p,.tiramisucount span p,.baklavacount span p,.piecount span p,.cakecount span p,.browniecount span p,.pannacount span p{
+    display: inline-block;
+}
+.wafflecount span,.cremecount span ,.macaroncount span ,.tiramisucount span,.baklavacount span,.piecount span ,.cakecount span ,.browniecount span,.pannacount span {
+    display: flex;
+    justify-content: space-between;
+}
+#waffledecrease,#cremedecrease,#macarondecrease,#tiramisudecrease,#baklavadecrease,#piedecrease,#cakedecrease,#browniedecrease,#pannadecrease{
+    color: #fff;
+    background-color: hsl(14, 83%, 35%);
+    border-radius: 50%;
+    border: 1.3px solid #fff;
+    padding: 0px 5px 1px 5px;
+    font-family: "Red Hat Text";
+    font-size: 12px;
+    margin-bottom: 1px;
+    margin-right: 20px;
+}
+#waffledecrease:hover,#cremedecrease:hover,#macarondecrease:hover,#tiramisudecrease:hover,#baklavadecrease:hover,#piedecrease:hover,#cakedecrease:hover,#browniedecrease:hover,#pannadecrease:hover{
+    color: hsl(14, 83%, 35%);
+    background-color: #fff;
+    cursor: pointer;
+}
+#waffleincrease,#cremeincrease,#macaronincrease,#tiramisuincrease,#baklavaincrease,#pieincrease,#cakeincrease,#brownieincrease,#pannaincrease{
+    color: #fff;
+    background-color: hsl(14, 83%, 35%);
+    border-radius: 50%;
+    border: 1.3px solid #fff;
+    padding: 0px 4px 1px 4px;
+    font-family: "Red Hat Text";
+    font-size: 12px;
+    margin-top: 2px;
+    margin-left: 20px;
+}
+#waffleincrease:hover,#cremeincrease:hover,#macaronincrease:hover,#tiramisuincrease:hover,#baklavaincrease:hover,#pieincrease:hover,#cakeincrease:hover,#brownieincrease:hover,#pannaincrease:hover{
+    color: hsl(14, 83%, 35%);
+    background-color: #fff;
+    cursor: pointer;
+}
+#wafflelabel,#cremebruleelabel,#macaronlabel,#tiramisulabel,
+#baklavalabel,#pielabel,#cakelabel,#brownielabel,#pannacottalabel{
+    color: #fff;
+    background-color: hsl(14, 83%, 35%);
+    font-family: "Red Hat Text";
+    font-size: 14px;
+    padding-top: 3px;
+}
+aside{
+    background-color: #fff;
+    padding: 20px;
+    margin-left: 20px;
+    border-radius: 8px;
+    max-height: fit-content;
+    width: 33.33%;
+}
+aside h1{
+    font-family: "Red Hat Text";
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: hsl(14, 83%, 35%);
+    
+}
+.emptycart{
+    display: block;
+    
+}
+.emptycartimg{
+    display: flex;
+    justify-content: center;
+}
+.emptycartimg img{
+    height: 70px;
+    width: 70px;
+}
+.emptycart p{
+    font-family: "Red Hat Text";
+    font-size: 12px;
+    color: hsl(14, 83%, 35%);
+    text-align: center;
+    margin-top: 10px;
+}
+.cart{
+    display: none;
+}
+.cartmenu1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid hsl(12, 16%, 94%);
+}
+.menu1 h2{
+    font-family: "Red Hat Text";
+    font-size: 12px;
+    line-height: 30px;
+    font-weight: 600;
+}
+.menu1 span{
+    display: flex;
+    font-family: "Red Hat Text";
+    font-size: 12px;
+    color: hsl(7, 20%, 60%);
+}
+.number{
+    font-family: "Red Hat Text";
+    font-size: 12px;
+    color: hsl(14, 83%, 35%);
+    margin-right: 10px;
+    font-weight: 600;
+}
+.amount {
+    font-family: "Red Hat Text";
+    font-size: 12px;
+    margin-right: 8px;
+}
+.totalamount {
+    font-family: "Red Hat Text";
+    font-size: 12px;
+    margin-right: 8px;
+    font-weight: 600;
+}
+.cancel{
+    font-family: "Red Hat Text";
+    font-size: 8px;
+    color: hsl(7, 20%, 60%);
+    border-radius: 50%;
+    border: 1px solid hsl(7, 20%, 60%);
+    padding: 0 1px 0 1px;
+    font-weight: 500;
+}
+.cancel:hover{
+    cursor: pointer;
+    color: #111;
+    border: 1px solid #111;
+}
+.ordertotal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.totaltext{
+    font-family: "Red Hat Text";
+    font-size: 14px;
+}
+.totalorder{
+    font-family: "Red Hat Text";
+    font-size: 16px; 
+}
+.confirmorder a{
+    font-family: "Red Hat Text";
+    font-size: 12px;
+    background-color:hsl(14, 83%, 35%) ;
+    color: #fff;
+    border: 1px solid hsl(14, 83%, 35%);
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 8px;
+    width: 100%;
+}
+.confirmorder a:hover{
+    background-color:hsl(14, 79%, 26%) ;
+    border: none;
+    cursor: pointer;
+}
+.confirmorder:hover{
+    background-color:hsl(14, 79%, 26%) ;
+    border: none;
+    cursor: pointer;
+}
+.confirmorder2 a{
+    font-family: "Red Hat Text";
+    font-size: 12px;   
+    color: #fff;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 8px;
+    width: 100%;
+}
+.confirmorder2 {
+    font-family: "Red Hat Text";
+    font-size: 12px;
+    background-color:hsl(14, 83%, 35%) ;
+    color: #fff;
+    border: 1px solid hsl(14, 83%, 35%);
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 8px;
+    width: 100%;
+}
+.confirmorder2:hover{
+    background-color:hsl(14, 79%, 26%) ;
+    border: none;
+    cursor: pointer;
+}
+.carbonneutral{
+    display: flex;
+    justify-content: center;
+    background-color: hsl(13, 31%, 94%);
+    border: 1px solid hsl(13, 31%, 94%);
+    border-radius: 7px;
+    padding: 10px ;
+    margin-top: 15px;
+    width: 100%;
+}
+.carbonneutral span{
+    display: flex;
+    align-items: center;
+    font-family: "Red Hat Text";
+    font-size: 12px;
+}
+.carbonneutral img{
+    width: 20px;
+    height: 20px;
+}
+
+.modalconfirmation{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+}
+.modalconfirmation img{
+    width: 35px;
+    height: 35px;
+}
+.modalh{
+    font-family: "Red Hat Text";
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: hsl(0, 0%, 9%);
+}
+.modalp{
+    font-family: "Red Hat Text";
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: hsl(7, 20%, 60%);
+}
+.menucalculation{
+    background-color: hsl(13, 31%, 94%);
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    
+}
+.menu1img{
+    display: flex;
+    align-items: center;
+}
+.menu1img img{
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+}
+}
