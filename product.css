@@ -165,6 +165,7 @@ body {
     font-family: "Red Hat Text";
     font-size: 12px;
     font-weight: 500;
+    color: hsl(0, 0%, 16%);
     position: relative;
 }
 .wafflebtn span:hover,.cremebtn span:hover,.macaronbtn span:hover,.tiramisubtn span:hover,.baklavabtn span:hover,.piebtn span:hover,.cakebtn span:hover,.browniebtn span:hover,.pannabtn span:hover{
@@ -529,6 +530,7 @@ body {
     font-family: "Red Hat Text";
     font-size: 12px;
     font-weight: 500;
+    color: hsl(0, 0%, 16%);
 }
 .wafflebtn span:hover,.cremebtn span:hover,.macaronbtn span:hover,.tiramisubtn span:hover,.baklavabtn span:hover,.piebtn span:hover,.cakebtn span:hover,.browniebtn span:hover,.pannabtn span:hover{
     color: hsl(14, 86%, 42%);
